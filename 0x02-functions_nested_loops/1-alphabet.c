@@ -1,5 +1,7 @@
 #include < stdio.h >  
-  
+ 
+void print_alphabet(void);
+
 int main()  
 {  
     char ch = 'a';  
