@@ -1,5 +1,3 @@
-// Write a program that prints _putchar, followed by a new line  
-
 #include "main.h"
 /**
  * main - prints the string "_putchar" from a character array.
