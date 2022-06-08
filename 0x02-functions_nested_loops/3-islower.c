@@ -1,27 +1,18 @@
 // C program to check a given character is a lowercase character or not
 // without using library function
 
-#include <stdio.h>
-
-int isLowercase(char ch)
+#include "main.h"
+/**
+ * _islower - tests whether a character is a
+ * lowercase letter from the English alphabet.
+ * @c: character to test.
+ * Return: 1 if it is a lowercase letter, 0 if it is not a lowercase letter.
+ */
+int _islower(int c)
 {
-    if (ch >= 'a' && ch <= 'z')
-        return 1;
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 
-    return 0;
-}
-
-int main()
-{
-    char ch;
-
-    _putchar("Enter character: ");
-    scanf("%c", &ch);
-
-    if (isLowercase(ch))
-        _putchar("Given character is a lowercase character\n");
-    else
-        _putchar("Given character is not a lowercase character\n");
-
-    return 0;
 }
