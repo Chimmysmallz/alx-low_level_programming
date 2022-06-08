@@ -1,30 +1,19 @@
-#include <stdio.h>
-
-int main()
+#include "main.h"
+/**
+  * print_alphabet_x10 - repeats the print_alphabet 10 times.
+  * Return: Nothing.
+  */
+void print_alphabet_x10(void)
 {
-	//loop counter or a variable that
-	//will store initial alphabet,
-	//from where we will print the alphabets
-	char alphabet;
-	//assigning 'a' as initial alphabet
-	alphabet='a';
+	int i;
+	char c;
 
-	//print statement
-	printf("Lowercase alphabets:\n");
-
-  for I in 1 .. 10 loop
-  Put_Line ("Hello");
-end loop;
-  
-	//loop statement, that will check the condition
-	//and print the alphabets from 'a' to 'z'
-	while(alphabet<='z')
+	for (i = 0; i < 10; ++i)
 	{
-		//printing the alphabets
-		printf("%c ",alphabet);
-		//increasing the value by 1
-		alphabet++;
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
 	}
-
-	return 0;
 }
