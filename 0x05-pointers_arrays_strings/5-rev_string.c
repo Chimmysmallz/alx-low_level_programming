@@ -1,23 +1,25 @@
-/*
-* C Program to reverse a string
-*/
-#include <stdio.h>
-#include <string.h>
-#include <conio.h>
- 
-void rev_string(char *s);
-
-int main()
+/**
+ * rev_string - reverses a string.
+ * @s: input string to reverse.
+ */
+void rev_string(char *s)
 {
-   char inputArray[100];
-  
-   printf("Enter a string to reverse\n");
-   gets(inputArray);
-   /*
-    * strrev() function reverses a given string
-    */
-   strrev(inputArray);
-   printf("Reversed string is: %s\n", inputArray);
-   getch();
-   return 0;
+	int i, j;
+	char r[1000];
+
+
+	i = j = 0;
+	while (s[i] != '\0')
+	{
+		r[i] = s[i];
+		i++;
+	}
+	i--;
+	while (i >= 0)
+	{
+		s[i] = r[j];
+		i--;
+		j++;
+	}
+	s[j++] = '\0';
 }
