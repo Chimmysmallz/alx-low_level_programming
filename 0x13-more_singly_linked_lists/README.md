@@ -1,8 +1,8 @@
-**Description of Files
-
-lists.h
+# Description of Files
+***
+## lists.h
 Header file contains prototypes, and the main struct.
-0-print_listint.c
+## 0-print_listint.c
 Prints the elements of a linked list. Returns the number of nodes.
 1-listint_len.c
 Gets the number of nodes in a linked list.
